@@ -1,11 +1,13 @@
+package projeto;
+
 import java.math.BigDecimal;
 
 public class ProgramaMain {
 
     public static void main(String[] args) {
         Orcamento orcamento = new Orcamento(new BigDecimal("100"));
-        CalcularImposto calcularImposto = new CalcularImposto();
+        CalcularImp calcularImp = new CalcularImp();
 
-        System.out.println(calcularImposto.calcular(orcamento, TipoImposto.ISS));
+        System.out.println(calcularImp.calcular(orcamento, new ICMS()));
     }
 }
