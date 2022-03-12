@@ -1,4 +1,4 @@
-package projeto;
+package orcamento;
 
 import java.math.BigDecimal;
 
